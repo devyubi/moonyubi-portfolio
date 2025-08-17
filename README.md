@@ -5,13 +5,85 @@
 - Todo 페이지로 간단한 기능 페이지 구현 (LocalStorage 저장 → 추후 DB 연동)
 - Vercel에 자동 배포(깃허브 연결)
 
+---
+
 # 2. 기술 스택
 
-- 번들러/개발서버: CRA(create-react-app) → 나중에 Vite로 전환 가능
-- 프레임워크: React 18 + TypeScript
-- 라우팅: react-router-dom
-- 스타일: Tailwind CSS
-- 마크다운 렌더링: react-markdown + remark-gfm, frontmatter 파싱 gray-matter
-- 유틸: date-fns (날짜 포맷)
+- React + TypeScript
+- CSS / TailwindCSS (선택)
+- react-router-dom
+- Context API (Theme, 로그인 등)
 
 ※ CRA 로 먼저 코딩 후 추후 Vite 로 수정 ※
+
+---
+
+# 3. 프로젝트 구조 (아직 만드는 중, 추후 변동될 수 있음)
+
+- 예상 구조
+  /src
+  ├── /components // 공통으로 재사용 가능한 컴포넌트
+  │ ├── Header.tsx
+  │ ├── Footer.tsx
+  │ └── Card.tsx
+  │
+  ├── /sections // 각 페이지별 섹션 컴포넌트
+  │ ├── MainIntro.tsx
+  │ ├── PortfolioGrid.tsx
+  │ └── TodoSection.tsx
+  │
+  ├── /pages // 페이지 단위 컴포넌트
+  │ ├── MainPage.tsx
+  │ ├── PortfolioPage.tsx
+  │ ├── BlogPage.tsx
+  │ ├── TodoPage.tsx
+  │ └── ContactPage.tsx
+  │
+  ├── /todos // Todo 관련 컴포넌트
+  │ ├── TodoWrite.tsx
+  │ ├── TodoList.tsx
+  │ ├── TodoItem.tsx
+  │ └── index.ts // Todo 컴포넌트 모아 export (선택)
+  │
+  ├── /contexts // Context 관리 (테마, 로그인 등)
+  │ └── ThemeContext.tsx
+  │
+  ├── /css // CSS 파일
+  │ ├── mainpage.css
+  │ ├── portfolio.css
+  │ ├── todo.css
+  │ └── App.css
+  │
+  ├── App.tsx
+  ├── index.tsx
+  └── index.css
+
+---
+
+# 4. 주요 기능
+
+1. **메인 페이지**
+
+   - 대표 작업물 카드
+   - 프로젝트 요약
+   - 소개 섹션
+
+2. **Portfolio 페이지**
+
+   - 작업물 상세 목록
+   - GitHub 링크
+
+3. **Blog 페이지**
+
+   - 미니 프로젝트 / 작업 후기
+
+4. **Todo 페이지**
+
+   - TodoWrite: 글 작성
+   - TodoList: 작성한 목록 표시
+   - TodoItem: 아이템 단위 관리 (완료/수정/삭제)
+
+5. **Contact 페이지**
+   - GitHub, 이메일, SNS 링크
+
+---
