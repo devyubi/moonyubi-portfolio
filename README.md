@@ -45,7 +45,7 @@
   │ ├── TodoWrite.tsx
   │ ├── TodoList.tsx
   │ ├── TodoItem.tsx
-  │ └── index.ts // Todo 컴포넌트 모아서 export (추후 시도 예정..)
+  │ └── todoTypes.ts // Todo 컴포넌트 모아서 export (추후 시도 예정..)
   │
   ├── /contexts // Context 관리 (테마, 로그인 등)
   │ └── ThemeContext.tsx
