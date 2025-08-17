@@ -14,7 +14,7 @@ const TodoWrite = ({ setTodos, handleTodoUpdate }: TodoWriteProps) => {
     setTitle(e.target.value);
   };
 
-  // 새 할일 등록
+  // 새로운 할 일 등록
   const handleAdd = () => {
     const trimmedTitle = title.trim();
     if (!trimmedTitle) return; // 공백 입력 금지
@@ -25,7 +25,8 @@ const TodoWrite = ({ setTodos, handleTodoUpdate }: TodoWriteProps) => {
       completed: false,
     };
 
-    handleTodoUpdate(newTodo); // 부모 state에 전달
+    // 새로운 할 일 추가
+    setTodos(prev => [...prev, newTodo]);
     setTitle(''); // 입력창 비우기
   };
 
@@ -38,18 +39,23 @@ const TodoWrite = ({ setTodos, handleTodoUpdate }: TodoWriteProps) => {
 
   return (
     <div>
-      <h2 className="font-bold text-lg ml-1">오늘의 할 일</h2>
-      <input
-        className="border p-1 rounded-lg m-1 dark:text-black"
-        type="text"
-        value={title}
-        onChange={handleChange}
-        onKeyDown={handleKeyDown}
-        placeholder="할 일을 입력하세요"
-      />
-      <button className="border p-1 rounded-lg ml-2" onClick={handleAdd}>
-        등록
-      </button>
+      <h2 className="font-bold text-lg ml-1 pb-1">오늘의 할 일</h2>
+      <div className="flex gap-3">
+        <input
+          className="flex-1 rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none focus:ring-2 focus:ring-brand dark:border-neutral-700 dark:bg-neutral-900"
+          type="text"
+          value={title}
+          onChange={handleChange}
+          onKeyDown={handleKeyDown}
+          placeholder="할 일을 입력하세요"
+        />
+        <button
+          className="rounded-lg bg-brand px-2 py-2 text-white hover:opacity-90 active:opacity-80"
+          onClick={handleAdd}
+        >
+          등록
+        </button>
+      </div>
     </div>
   );
 };
