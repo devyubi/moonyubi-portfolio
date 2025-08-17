@@ -21,6 +21,8 @@
 # 3. 프로젝트 구조 (아직 만드는 중, 추후 변동될 수 있음)
 
 - 예상 구조
+
+```text
   /src
   ├── /components // 공통으로 재사용 가능한 컴포넌트
   │ ├── Header.tsx
@@ -57,6 +59,7 @@
   ├── App.tsx
   ├── index.tsx
   └── index.css
+```
 
 ---
 
