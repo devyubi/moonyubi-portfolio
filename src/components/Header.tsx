@@ -9,13 +9,20 @@ const Header = () => {
 
   const handleClickToggle = () => {
     setIsDarkMode(!isDarkMode);
+    console.log(isDarkMode);
   };
 
   return (
     <header>
-      <div>
-        <h2>ToggleSwitch</h2>
-        <button onClick={handleClickToggle}> {isDarkMode ? 'Dark' : 'Light'} </button>
+      <div
+        className={`px-20 py-2 border-b border-gray-200 flex items-center justify-between 
+              ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}
+      >
+        {/* yubi's 는 eslint 규칙에 맞지 않음. &apos;s : ' */}
+        <h2>yubi&apos;s portfoilo</h2>
+        <button className="border p-1 rounded-lg" onClick={handleClickToggle}>
+          {isDarkMode ? 'Light' : 'Dark'}
+        </button>
       </div>
     </header>
   );
