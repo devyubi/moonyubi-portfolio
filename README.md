@@ -26,36 +26,29 @@
   /src
   ├── /components // 공통으로 재사용할 컴포넌트
   │ ├── Header.tsx
-  │ ├── Footer.tsx
-  │ └── Card.tsx
+  │ └── Footer.tsx
   │
   ├── /sections // 각 페이지별 섹션 컴포넌트
   │ ├── MainIntro.tsx
-  │ ├── PortfolioGrid.tsx
-  │ └── TodoSection.tsx
+  │ └── PortfolioGrid.tsx
   │
   ├── /pages // 페이지 단위 컴포넌트
   │ ├── MainPage.tsx
   │ ├── PortfolioPage.tsx
   │ ├── BlogPage.tsx
-  │ ├── TodoPage.tsx
-  │ └── ContactPage.tsx  // 보고 Footer와 합칠지 말지 결정함. (이메일 등등 만드려고 했음. 근데 굳이 안만들어도 될듯.?)
+  │ └── TodoPage.tsx
   │
   ├── /todos // Todo 관련 컴포넌트
   │ ├── TodoWrite.tsx
   │ ├── TodoList.tsx
   │ ├── TodoItem.tsx
-  │ └── todoTypes.ts // Todo 컴포넌트 모아서 export (추후 시도 예정..)
+  │ ├── todoTypes.ts // Todo 컴포넌트 모아서 export
+  │ └── TodoSection.tsx
   │
   ├── /contexts // Context 관리 (테마, 로그인 등)
   │ └── ThemeContext.tsx
   │
-  ├── /css // CSS 파일
-  │ ├── mainpage.css
-  │ ├── portfolio.css
-  │ ├── todo.css
-  │ └── App.css
-  │
+  ├── App.css
   ├── App.tsx
   ├── index.tsx
   └── index.css
