@@ -2,23 +2,14 @@ import { portfolioProjects } from './portfolioProjects';
 
 const PortfolioGrid = () => {
   return (
-<<<<<<< HEAD
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-=======
     <div className="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-gray-50 dark:bg-gray-700">
->>>>>>> 4396a1eacfdbb8939f7e5c09d25c0065a1dd8eab
       {portfolioProjects.map(project => (
         <a
           key={project.id}
           href={project.link}
           target="_blank"
-<<<<<<< HEAD
-          rel="noopener noreferrer"
-          className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1"
-=======
           rel="noopener noreferrer" // 보안상 꼭 추가 해야함
           className=" bg-gray-50 border rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1"
->>>>>>> 4396a1eacfdbb8939f7e5c09d25c0065a1dd8eab
         >
           <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
           <div className="p-4">

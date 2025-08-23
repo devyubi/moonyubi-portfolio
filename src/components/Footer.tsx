@@ -8,8 +8,6 @@ const Footer = () => {
       <a href="mailto:dev.munyubi@gmail.com" className="hover:text-blue-600">
         dev.munyubi@gmail.com
       </a>
-<<<<<<< HEAD
-=======
       <br />
       <a
         href="https://www.notion.so/Portfolio-21cd08a49cc3809ebe46e9c05321d09c"
@@ -19,7 +17,6 @@ const Footer = () => {
       >
         Notion 문유비 포트폴리오 보러가기
       </a>
->>>>>>> 4396a1eacfdbb8939f7e5c09d25c0065a1dd8eab
     </footer>
   );
 };

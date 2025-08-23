@@ -1,5 +1,4 @@
 import Header from './components/Header';
-<<<<<<< HEAD
 import Footer from './components/Footer';
 import { ThemeProvider, useThemeContext } from './contexts/ThemeContext';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -28,29 +27,12 @@ const AppContent = () => {
     </div>
   );
 };
-=======
-import { ThemeProvider } from './contexts/ThemeContext';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MainPage from './pages/MainPage';
-import Footer from './components/Footer';
->>>>>>> 4396a1eacfdbb8939f7e5c09d25c0065a1dd8eab
-
-function App() {
+export default function App() {
   return (
-    <Router>
-      <ThemeProvider>
-<<<<<<< HEAD
+    <ThemeProvider>
+      <Router>
         <AppContent />
-=======
-        <Header />
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-        </Routes>
-        <Footer />
->>>>>>> 4396a1eacfdbb8939f7e5c09d25c0065a1dd8eab
-      </ThemeProvider>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 }
-
-export default App;
