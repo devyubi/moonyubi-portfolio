@@ -1,4 +1,3 @@
-import React from 'react';
 import { portfolioProjects } from './portfolioProjects';
 
 const PortfolioGrid = () => {

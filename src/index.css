@@ -21,6 +21,12 @@ body,
   height: 100%;
 }
 
+/* 전체 body 색상 지정해줌 (container) */
+body {
+  @apply bg-gray-50;
+  @apply transition-colors duration-300; /* 다크 모드 전환 부드럽게 */
+}
+
 .container-app {
   @apply mx-auto max-w-[var(--app-max-w)] px-4;
 }
@@ -65,4 +71,3 @@ body,
   --primary: 62 100% 50%; /* 노랑 */
   --primary-fg: 0 0% 0%;
 }
-
