@@ -37,7 +37,11 @@ const TodoSection = () => {
   };
 
   return (
+<<<<<<< HEAD
     <section className="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl mt-10">
+=======
+    <section className="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl">
+>>>>>>> 4396a1eacfdbb8939f7e5c09d25c0065a1dd8eab
       <h2 className="text-2xl font-semibold mb-4">오늘의 할 일</h2>
       <TodoWrite setTodos={setTodos} handleTodoUpdate={handleTodoUpdate} />
       <TodoList todos={todos} onToggle={handleToggle} onDelete={handleDelete} onEdit={handleEdit} />

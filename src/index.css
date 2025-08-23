@@ -21,12 +21,15 @@ body,
   height: 100%;
 }
 
+<<<<<<< HEAD
 /* 전체 body 색상 지정해줌 (container) */
 body {
   @apply bg-gray-50;
   @apply transition-colors duration-300; /* 다크 모드 전환 부드럽게 */
 }
 
+=======
+>>>>>>> 4396a1eacfdbb8939f7e5c09d25c0065a1dd8eab
 .container-app {
   @apply mx-auto max-w-[var(--app-max-w)] px-4;
 }
