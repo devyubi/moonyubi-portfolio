@@ -45,6 +45,6 @@ export const portfolioProjects = [
     description: 'todo-project (오늘 할 일)',
     imageUrl: 'ddodo.png',
     tags: ['React', 'ts', 'tailwind'],
-    link: 'https://www.notion.so/yubi-s-portfolio-blog-252d08a49cc380a59b4dfe9dbcd30ec2?source=copy_link',
+    link: 'https://www.notion.so/Ddudoo-todo-project-256d08a49cc3805cbe9ac2c14d8fce11?source=copy_link',
   },
 ];
